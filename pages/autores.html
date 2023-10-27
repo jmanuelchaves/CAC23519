@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABEL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png">
+
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>BABEL - Libros</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="bi bi-house-door-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                                  </svg>
+                                <a href="../index.html">
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/libros.html" onclick="seleccionar()">
+                                <i class="bi bi-book-half"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                    <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                <a href="../pages/libros.html">
+                                <span>Libros</span>
+                                </a>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/autores.html" onclick="seleccionar()">
+                                <i class="bi bi-person-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                                  </svg>
+                                <a href="../pages/autores.html">
+                                <span>Autores</span>
+                                </a>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/sucursales.html" onclick="seleccionar()">
+                                <i class="bi bi-building"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                    <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
+                                    <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
+                                  </svg>
+                                <a href="../pages/sucursales.html">
+                                <span>Sucursales</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/contacto.html" onclick="seleccionar()">
+                                <i class="bi bi-pen-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+                                  </svg>
+                                <a href="../pages/contacto.html">
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        
+    <!-- SECCION AUTORES -->
+    <section id="autores">
+        <h2>Autores</h2>
+
+        <div class="fila">
+            <div class="item">
+                <img src="../img/poe.png" alt="">
+                <h3>Edgar Allan Poe</h3>
+                <p>Fue un escritor, poeta, crítico y periodista romántico1​2​ estadounidense, generalmente reconocido como uno de los maestros universales del relato corto, del cual fue uno de los primeros practicantes en su país.</p>
+            </div>
+            <div class="item">
+                <img src="../img/tolstoi.png" alt="">
+                <h3>León Tolstói</h3>
+                <p>Novelista ruso, considerado uno de los escritores más importantes de la literatura mundial.1​ Sus dos obras más famosas, Guerra y paz y Ana Karénina, están consideradas como la cúspide del realismo ruso, junto a obras de Fiódor Dostoyevski.</p>
+            </div>
+            <div class="item">
+                <img src="../img/Orwell.png" alt="">
+                <h3>George Orwell</h3>
+                <p>Fue un novelista, periodista, ensayista y crítico británico nacido en la India, autor entre otras obras de las novelas distópicas Rebelión en la granja (1945) y 1984 (1949).</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="../img/tolkien.png" alt="">
+                <h3>J. R. R. Tolkien
+                </h3>
+                <p>Fue un escritor, poeta, filólogo, lingüista y profesor universitario británico, nacido en el Estado Libre de Orange (hoy parte de Sudáfrica). Conocido principalmente por ser el autor de El hobbit y El Señor de los Anillos.</p>
+            </div>
+            <div class="item">
+                <img src="../img/allende.png" alt="">
+                <h3>Isabel Allende</h3>
+                <p>Es una escritora chilena. Desde 2004 es miembro de la Academia Estadounidense de las Artes y las Letras.5​ Obtuvo el Premio Nacional de Literatura de Chile en 2010. Autora superventas, la venta total de sus libros alcanza 73 millones de ejemplares y sus obras han sido traducidas a 42 idiomas.6​Es considerada como la escritora viva más leída del mundo de la lengua española.​</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
